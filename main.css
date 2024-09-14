@@ -17,7 +17,7 @@ body {
 /* Header */
 
 header {
-  background-color: #003366;
+  background-color: #7093d8;
   padding: 0.4rem;
   text-align: center;
   position: fixed;
@@ -35,12 +35,14 @@ header {
 }
 
 .logo img {
-  width: 60px;
+  width: 40px;
+  mix-blend-mode: color-burn;
 }
 
 .nav-bar {
   display: flex;
   gap: 2.8rem;
+  z-index: 10000;
 }
 
 .nav-bar a,
@@ -58,16 +60,12 @@ header {
   left: 0;
   width: 0;
   height: 2px;
-  /* Border thickness */
   background-color: red;
-  /* Border color */
   transition: width 0.3s linear;
-  /* Smooth transition */
 }
 
 .nav-bar a:hover::after {
-  width: 80px;
-  /* Expanded width on hover */
+  width: 50px;
 }
 
 /* Home */
@@ -352,6 +350,35 @@ header {
   background-color: aqua;
   margin-top: 1rem;
 }
+
+/* Partners */
+
+.partners-text {
+  color: #708090;
+  text-align: center;
+  margin-top: 3rem;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+}
+
+.partners-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.parters-content {
+  display: flex;
+  gap: 10rem;
+}
+
+.parters-content img {
+  width: 100px;
+  border-radius: 1.8rem;
+  box-shadow: 2px 2px 2px rgb(66, 65, 65);
+}
+
 
 /* Footer */
 
